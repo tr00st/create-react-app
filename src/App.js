@@ -12,6 +12,7 @@ function App() {
     }
     getDate();
   }, []);
+  const breakThings = () => ({}.missing.missing);
   return (
     <main>
       <h1>Create React App + Go API</h1>
@@ -51,7 +52,7 @@ function App() {
       <h2>The date according to Go is:</h2>
       <p>{date ? date : 'Loading date...'}</p>
       <p>Click this button to break things:</p>
-      <button onClick={{}.methodDoesNotExist}>Break the world</button>
+      <button onClick={breakThings}>Break the world</button>
     </main>
   );
 }
