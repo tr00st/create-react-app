@@ -13,6 +13,7 @@ function App() {
     getDate();
   }, []);
   const breakThings = () => ({}.missing.missing);
+  const breakOtherThings = () => ({}.missing.alsoMissing);
   return (
     <main>
       <h1>Create React App + Go API</h1>
@@ -53,6 +54,7 @@ function App() {
       <p>{date ? date : 'Loading date...'}</p>
       <p>Click this button to break things:</p>
       <button onClick={breakThings}>Break the world</button>
+      <button onClick={breakOtherThings}>Break the moon</button>
     </main>
   );
 }
